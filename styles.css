@@ -82,7 +82,6 @@ header {
       list-style-type: none;
       gap: 5px;
       li {
-        display: inline-block;
         a {
           display: inline-block;
           padding: 10px 20px;
@@ -112,10 +111,7 @@ header {
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
     nav {
-      margin-top: 10px;
       width: 100%;
       ul {
         display: none;
@@ -148,7 +144,7 @@ section {
 }
 
 .button {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px 30px;
   background-color: var(--blue);
   color: var(--base-100);
@@ -156,14 +152,6 @@ section {
   transition: ease 0.3s all;
   &:hover {
     background-color: black;
-  }
-  &.white {
-    background-color: white;
-    color: black;
-    &:hover {
-      background-color: var(--base-100);
-      color: var(--base);
-    }
   }
 }
 
@@ -203,7 +191,7 @@ section {
   }
 }
 
-.featured-menu {
+.featured {
   .burgers {
     display: flex;
     gap: 30px;
@@ -231,7 +219,6 @@ section {
 
         &:hover {
           img {
-            object-fit: cover;
             transform: scale(1.2);
           }
         }
